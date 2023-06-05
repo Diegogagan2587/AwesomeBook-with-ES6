@@ -53,7 +53,7 @@ class Books {
 
         display(this);
         this.addListeners();
-        updateLocalStorage();
+        updateLocalStorage(this);
     }
 
     addBook() {
@@ -62,7 +62,7 @@ class Books {
         this.bookList.push({ title: addtitle, author: addauthor });
         display(this);
         this.addListeners();
-        updateLocalStorage();
+        updateLocalStorage(this);
     }
 }
 
