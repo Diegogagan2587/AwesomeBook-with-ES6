@@ -1,29 +1,13 @@
 import { updateLocalStorage } from "./modules/local_storage.js";
 import { display } from "./modules/diplay_books.js";
+import { showClickedSection } from "./modules/switch_sections.js";
 
 /* --Navigation Bar--*/
-function hideOrShow(event) {
-    const bookListSection = document.querySelector('#books-section');
-    const formSection = document.querySelector('#form-add-book');
-    const contactSection = document.querySelector('#contact');
-    if (event.target.text === 'List') {
-        formSection.classList.add('hide');
-        contactSection.classList.add('hide');
-        bookListSection.classList.remove('hide');
-    } else if (event.target.text === 'Add New') {
-        formSection.classList.remove('hide');
-        contactSection.classList.add('hide');
-        bookListSection.classList.add('hide');
-    } else if (event.target.text === 'contact') {
-        formSection.classList.add('hide');
-        contactSection.classList.remove('hide');
-        bookListSection.classList.add('hide');
-    }
-}
+
 const navAnchors = document.querySelectorAll('.nav-anchors');
 
 navAnchors.forEach((element) => {
-    element.addEventListener('click', hideOrShow);
+    element.addEventListener('click', showClickedSection);
 });
 
 /* --Navigation Bar--*/
