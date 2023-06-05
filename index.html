@@ -9,6 +9,57 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <p>Awesome Books!</p>
+            <ul id="top-nav-ul">
+                <li class="top-nav-li" > <a class="nav-anchors" href="#books-section">List</a></li>
+                <li class="top-nav-li" > <a class="nav-anchors" href="#form-add-book">Add New</a> </li>
+                <li class="top-nav-li" > <a class="nav-anchors" href="#contact">contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="books-section" class="books">
+        <table>
+            <thead>
+                <h1>Awesome Books</h1>
+            </thead>
+            <tbody class="booklist">
+
+            </tbody>
+        </table>
+        <hr>
+    </section>
+    <form id="form-add-book" class="form-add-book" action="">
+        <fieldset>
+            <legend>Add a New Book</legend>
+
+            <label>
+            <input type="text" name="title" id="title" placeholder="Title">
+        </label>
+            <br><br>
+            <label>
+            <input type="text" name="author" id="author" placeholder="Author">
+        </label>
+            <br><br>
+            <button type="button" id="addBook">Add</button>
+        </fieldset>
+
+    </form>
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+        <h2>Contact Information</h2>
+        <p>Do have any questions or you just want to say "Hello"?</p>
+        <p>you can reach out to us!</p>
+        <ul>
+            <li>Our e-mail: mail@gamil.com</li>
+            <li>Our phone: +93798888978</li>
+            <li>Our adderess: Kabul, Afghanistan</li>
+        </ul>
+    </section>
+    <!-- Footer section -->
+    <footer>
+        <span>&copy; Copyright</span>
+    </footer>
 </body>
 </html>
