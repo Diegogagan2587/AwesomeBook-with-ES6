@@ -1,140 +1,135 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  
-  /* -- Start Navigation Bar--- */
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    border: 2px solid black;
-  }
-  
-  nav ul {
-    display: flex;
-    padding-left: 0;
-    justify-content: space-around;
-    width: 40%;
-    align-items: center;
-  }
-  
-  nav ul li {
-    list-style: none;
-    padding: 2%;
-    padding-right: 4%;
-    border-right: 1px solid black;
-  }
-  
-  nav ul li a {
-    color: black;
-  }
-  
-  
-  /* -- End Navigation Bar--- */
-  
-  .books h1 {
-    text-align: center;
-  }
-  
-  table {
-    width: 100%;
-    height: 100%;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .booklist tr {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-    background-color: lightgray;
-    margin-bottom: 0.5rem;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  
-  .booklist tr div {
-    width: 50%;
-  }
-  
-  .removeButton {
-    float: right;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  
-  hr {
-    margin-top: 2rem;
-    width: 100px;
-    background-color: black;
-  }
-  
-  .form-add-book {
-    padding-top: 5%;
-  }
-  
-  fieldset {
-    width: 50%;
-    margin: 0 auto;
-    border: none;
-  }
-  
-  legend {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  fieldset input {
-    padding: 10px;
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  fieldset button {
-    float: right;
-    padding: 10px 30px;
-    border-radius: 2px solid black;
-  }
-  
-  
-  /* contact section */
-  
-  .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contact p {
-    margin: 0;
-  }
-  
-  
-  /* Footer section */
-  
-  footer {
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 5px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .hide {
-    display: none;
-  }
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -- Start Navigation Bar--- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 2px solid black;
+}
+
+nav ul {
+  display: flex;
+  padding-left: 0;
+  justify-content: space-around;
+  width: 40%;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 2%;
+  padding-right: 4%;
+  border-right: 1px solid black;
+}
+
+nav ul li a {
+  color: black;
+}
+
+/* -- End Navigation Bar--- */
+
+.books h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.booklist tr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: lightgray;
+  margin-bottom: 0.5rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.booklist tr div {
+  width: 50%;
+}
+
+.removeButton {
+  float: right;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+hr {
+  margin-top: 2rem;
+  width: 100px;
+  background-color: black;
+}
+
+.form-add-book {
+  padding-top: 5%;
+}
+
+fieldset {
+  width: 50%;
+  margin: 0 auto;
+  border: none;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+fieldset input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+fieldset button {
+  float: right;
+  padding: 10px 30px;
+}
+
+/* contact section */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact p {
+  margin: 0;
+}
+
+/* Footer section */
+
+footer {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}

@@ -1,10 +1,10 @@
-import { removeBook } from "./remove_book.js";
+import { removeBook } from './remove_book.js';
 
-function addListeners(thisClass) {
-    const removebtn = document.querySelectorAll('.removeButton');
-    removebtn.forEach((element) => {
-        element.addEventListener('click', removeBook.bind(thisClass));
-    });
+function addRemoveListeners(thisClass) {
+  const removebtn = document.querySelectorAll('.removeButton');
+  removebtn.forEach((element) => {
+    element.addEventListener('click', removeBook.bind(thisClass));
+  });
 }
 
-export { addListeners as addRemoveListeners };
+export default addRemoveListeners;

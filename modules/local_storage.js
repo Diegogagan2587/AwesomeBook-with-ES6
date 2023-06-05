@@ -1,5 +1,5 @@
 function updateLocalStorage(thisClass) {
-    localStorage.setItem('bookList', JSON.stringify(thisClass.bookList));
-  }
+  localStorage.setItem('bookList', JSON.stringify(thisClass.bookList));
+}
 
-  export { updateLocalStorage };
+export default updateLocalStorage;

@@ -1,7 +1,7 @@
-import { setListenersToNavigationBar } from "./modules/navigation_bar.js";
-import { Books } from "./modules/books_constructor.js";
+import setListenersToNavigationBar from './modules/navigation_bar.js';
+import Books from './modules/books_constructor.js';
 
-//nav-bar
+// nav-bar
 setListenersToNavigationBar();
 
 // object constructor
