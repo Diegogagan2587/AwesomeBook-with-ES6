@@ -1,4 +1,5 @@
 import { updateLocalStorage } from "./modules/local_storage.js";
+import { display } from "./modules/diplay_books.js";
 
 /* --Navigation Bar--*/
 function hideOrShow(event) {
@@ -34,7 +35,7 @@ class Books {
         const addBookButton = document.querySelector('#addBook');
         addBookButton.addEventListener('click', this.addBook.bind(this));
         if (this.bookList !== null) {
-            this.display();
+            display(this);
             this.addListeners();
         }
     }
@@ -50,7 +51,7 @@ class Books {
         const indexToRemove = event.target.value;
         this.bookList.splice(indexToRemove, 1);
 
-        this.display();
+        display(this);
         this.addListeners();
         updateLocalStorage();
     }
@@ -59,23 +60,9 @@ class Books {
         const addtitle = document.querySelector('#title').value;
         const addauthor = document.querySelector('#author').value;
         this.bookList.push({ title: addtitle, author: addauthor });
-        this.display();
+        display(this);
         this.addListeners();
         updateLocalStorage();
-    }
-
-    display() {
-        const tbody = document.querySelector('.booklist');
-        tbody.innerHTML = '';
-        let index = 0;
-        this.bookList.forEach((element) => {
-            const currentRow = document.createElement('tr');
-            const currentTitle = element.title;
-            const currentAuthor = element.author;
-            currentRow.innerHTML = `<div>"${currentTitle}"&nbsp;&nbsp<span>by</span>&nbsp;&nbsp ${currentAuthor}</div> <div><button class='removeButton' value="${index}">Remove</button></div> `;
-            tbody.appendChild(currentRow);
-            index += 1;
-        });
     }
 }
 
