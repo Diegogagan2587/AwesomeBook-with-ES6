@@ -1,6 +1,7 @@
 import { updateLocalStorage } from "./modules/local_storage.js";
 import { display } from "./modules/diplay_books.js";
 import { showClickedSection } from "./modules/switch_sections.js";
+import { addRemoveListeners } from "./modules/remove_listeners.js"
 
 /* --Navigation Bar--*/
 
@@ -20,15 +21,8 @@ class Books {
         addBookButton.addEventListener('click', this.addBook.bind(this));
         if (this.bookList !== null) {
             display(this);
-            this.addListeners();
+            addRemoveListeners(this);
         }
-    }
-
-    addListeners() {
-        const removebtn = document.querySelectorAll('.removeButton');
-        removebtn.forEach((element) => {
-            element.addEventListener('click', this.removeBook.bind(this));
-        });
     }
 
     removeBook(event) {
@@ -36,7 +30,7 @@ class Books {
         this.bookList.splice(indexToRemove, 1);
 
         display(this);
-        this.addListeners();
+        addRemoveListeners(this);
         updateLocalStorage(this);
     }
 
@@ -45,7 +39,7 @@ class Books {
         const addauthor = document.querySelector('#author').value;
         this.bookList.push({ title: addtitle, author: addauthor });
         display(this);
-        this.addListeners();
+        addRemoveListeners(this);
         updateLocalStorage(this);
     }
 }
