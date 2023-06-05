@@ -3,16 +3,10 @@ import { display } from "./modules/diplay_books.js";
 import { showClickedSection } from "./modules/switch_sections.js";
 import { addRemoveListeners } from "./modules/remove_listeners.js";
 import { addBook } from "./modules/add_book.js";
+import { setListenersToNavigationBar } from "./modules/navigation_bar.js"
 
-/* --Navigation Bar--*/
-
-const navAnchors = document.querySelectorAll('.nav-anchors');
-
-navAnchors.forEach((element) => {
-    element.addEventListener('click', showClickedSection);
-});
-
-/* --Navigation Bar--*/
+//nav-bar
+setListenersToNavigationBar();
 
 // object constructor
 class Books {
