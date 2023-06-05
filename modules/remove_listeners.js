@@ -1,4 +1,4 @@
-import { removeBook } from './remove_book.js';
+import removeBook from './remove_book.js';
 
 function addRemoveListeners(thisClass) {
   const removebtn = document.querySelectorAll('.removeButton');
