@@ -1,7 +1,7 @@
 import { updateLocalStorage } from "./modules/local_storage.js";
 import { display } from "./modules/diplay_books.js";
 import { showClickedSection } from "./modules/switch_sections.js";
-import { addRemoveListeners } from "./modules/remove_listeners.js"
+import { addRemoveListeners } from "./modules/remove_listeners.js";
 
 /* --Navigation Bar--*/
 
@@ -23,15 +23,6 @@ class Books {
             display(this);
             addRemoveListeners(this);
         }
-    }
-
-    removeBook(event) {
-        const indexToRemove = event.target.value;
-        this.bookList.splice(indexToRemove, 1);
-
-        display(this);
-        addRemoveListeners(this);
-        updateLocalStorage(this);
     }
 
     addBook() {

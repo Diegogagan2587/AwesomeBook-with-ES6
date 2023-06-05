@@ -1,7 +1,9 @@
+import { removeBook } from "./remove_book.js";
+
 function addListeners(thisClass) {
     const removebtn = document.querySelectorAll('.removeButton');
     removebtn.forEach((element) => {
-        element.addEventListener('click', thisClass.removeBook.bind(thisClass));
+        element.addEventListener('click', removeBook.bind(thisClass));
     });
 }
 
