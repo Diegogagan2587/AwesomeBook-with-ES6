@@ -1,7 +1,7 @@
-// import { DateTime } from 'luxon';
+import { DateTime } from './modules/luxon.js';
 import setListenersToNavigationBar from './modules/navigation_bar.js';
 import Books from './modules/books_constructor.js';
-const { DateTime } = require('luxon');
+// const { DateTime } = require('luxon');
 
 /* --start dates--*/
 const currentDate = DateTime.now().toLocaleString(DateTime.DATE_MED);
