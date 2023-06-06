@@ -1,13 +1,20 @@
 import display from './diplay_books.js';
-import addRemoveListeners from './remove_listeners.js';
 import updateLocalStorage from './local_storage.js';
 
 function removeBook(event) {
   const indexToRemove = event.target.value;
   this.bookList.splice(indexToRemove, 1);
 
-  display(this);
+  function addRemoveListeners(thisClass) {
+    const removebtn = document.querySelectorAll('.removeButton');
+    removebtn.forEach((element) => {
+      element.addEventListener('click', removeBook.bind(thisClass));
+    });
+  }
+
   addRemoveListeners(this);
+
+  display(this);
   updateLocalStorage(this);
 }
 
