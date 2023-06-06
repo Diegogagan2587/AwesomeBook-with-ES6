@@ -1,16 +1,16 @@
+// import { DateTime } from 'luxon';
 import setListenersToNavigationBar from './modules/navigation_bar.js';
 import Books from './modules/books_constructor.js';
-import { DateTime } from "./modules/luxon.js";
+const { DateTime } = require('luxon');
 
-/*--start dates--*/
+/* --start dates--*/
 const currentDate = DateTime.now().toLocaleString(DateTime.DATE_MED);
 const dateTimeAttribute = DateTime.now().toString(DateTime.DATE_SHORT);
 const currentTime = document.getElementById('currentTime');
 currentTime.datetime = dateTimeAttribute;
 currentTime.innerText = `${currentDate}`;
 
-
-/*--Ends dates--*/
+/* --Ends dates--*/
 // nav-bar
 setListenersToNavigationBar();
 
