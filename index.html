@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Book with ES6</title>
     <link rel="stylesheet" href="index.css">
-    <script type="module" src="./index.js"  defer></script>
+    <script type="module" src="./index.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
             <p>Awesome Books!</p>
             <ul id="top-nav-ul">
-                <li class="top-nav-li" > <a class="nav-anchors" href="#books-section">List</a></li>
-                <li class="top-nav-li" > <a class="nav-anchors" href="#form-add-book">Add New</a> </li>
-                <li class="top-nav-li" > <a class="nav-anchors" href="#contact">contact</a> </li>
+                <li class="top-nav-li"> <a class="nav-anchors" href="#books-section">List</a></li>
+                <li class="top-nav-li"> <a class="nav-anchors" href="#form-add-book">Add New</a> </li>
+                <li class="top-nav-li"> <a class="nav-anchors" href="#contact">contact</a> </li>
             </ul>
         </nav>
         <div class="time-container">
             <time id="currentTime"></time>
         </div>
-        
+
     </header>
     <section id="books-section" class="books">
         <table>
@@ -39,12 +41,12 @@
             <legend>Add a New Book</legend>
 
             <label>
-            <input type="text" name="title" id="title" placeholder="Title">
-        </label>
+                <input type="text" name="title" id="title" placeholder="Title">
+            </label>
             <br><br>
             <label>
-            <input type="text" name="author" id="author" placeholder="Author">
-        </label>
+                <input type="text" name="author" id="author" placeholder="Author">
+            </label>
             <br><br>
             <button type="button" id="addBook">Add</button>
         </fieldset>
@@ -66,4 +68,5 @@
         <span>&copy; Copyright</span>
     </footer>
 </body>
+
 </html>
