@@ -91,9 +91,9 @@ https://github.com/Salarhabibi-amir/AwsomeBook
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Live Demo Will be Available soon
+> Take a look on the live site:
 
-- [Live Demo Link available soon](https://google.com);
+- [Live Demo here](https://diegogagan2587.github.io/AwesomeBook-with-ES6/);
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
