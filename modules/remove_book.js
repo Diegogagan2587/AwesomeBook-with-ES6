@@ -12,9 +12,8 @@ function removeBook(event) {
     });
   }
 
-  addRemoveListeners(this);
-
   display(this);
+  addRemoveListeners(this);
   updateLocalStorage(this);
 }
 
