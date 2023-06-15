@@ -1,6 +1,10 @@
 function display(thisClass) {
   const tbody = document.querySelector('.booklist');
-  tbody.innerHTML = '';
+  tbody.innerHTML = `
+  <tr>
+    <th>Books | Author </th>
+  </tr>
+  `;
   let index = 0;
   thisClass.bookList.forEach((element) => {
     const currentRow = document.createElement('tr');
